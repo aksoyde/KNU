@@ -1,7 +1,7 @@
 /**
 	---, FileInfo.cpp
-	Назначение: Реализация структуры хранения информации о файлах
-
+	ГЌГ Г§Г­Г Г·ГҐГ­ГЁГҐ: ГђГҐГ Г«ГЁГ§Г Г¶ГЁГї Г±ГІГ°ГіГЄГІГіГ°Г» ГµГ°Г Г­ГҐГ­ГЁГї ГЁГ­ГґГ®Г°Г¬Г Г¶ГЁГЁ Г® ГґГ Г©Г«Г Гµ
+	Purpose: Implementation of file information storage structures
 	@author Denis Aksoy
 	@version 1.0 24/11/2018
 */
@@ -9,7 +9,8 @@
 #include "FileInfo.h"
 
 /**
-	Добавляет информацию о файлах в vector.
+	Г„Г®ГЎГ ГўГ«ГїГҐГІ ГЁГ­ГґГ®Г°Г¬Г Г¶ГЁГѕ Г® ГґГ Г©Г«Г Гµ Гў vector.
+	Adds information about files in vector
 */
 
 void FileInfo::addFile(std::string name, int size, std::string created, std::string mode, std::string type) {
@@ -17,7 +18,8 @@ void FileInfo::addFile(std::string name, int size, std::string created, std::str
 }
 
 /**
-	Ищет файл по имени.
+	Г€Г№ГҐГІ ГґГ Г©Г« ГЇГ® ГЁГ¬ГҐГ­ГЁ.
+	Searches file by name
 */
 
 File FileInfo::searchByName(std::string name) {
@@ -29,7 +31,8 @@ File FileInfo::searchByName(std::string name) {
 }
 
 /**
-	Ищет файл по размеру.
+	Г€Г№ГҐГІ ГґГ Г©Г« ГЇГ® Г°Г Г§Г¬ГҐГ°Гі.
+	Searches file by size
 */
 
 File FileInfo::searchBySize(int size) {
@@ -41,7 +44,8 @@ File FileInfo::searchBySize(int size) {
 }
 
 /**
-	Ищет файл по типу (Файл/Папка).
+	Г€Г№ГҐГІ ГґГ Г©Г« ГЇГ® ГІГЁГЇГі (Г”Г Г©Г«/ГЏГ ГЇГЄГ ).
+	Searches file by type (File/Folder)
 */
 
 File FileInfo::searchByType(std::string type) {
@@ -53,7 +57,8 @@ File FileInfo::searchByType(std::string type) {
 }
 
 /**
-	Ищет файл по времени создания.
+	Г€Г№ГҐГІ ГґГ Г©Г« ГЇГ® ГўГ°ГҐГ¬ГҐГ­ГЁ Г±Г®Г§Г¤Г Г­ГЁГї.
+	Searches file by time of creation
 */
 
 File FileInfo::searchByTimeCreated(std::string created) {
@@ -65,7 +70,8 @@ File FileInfo::searchByTimeCreated(std::string created) {
 }
 
 /**
-	Ищет файл по времени изменения.
+	Г€Г№ГҐГІ ГґГ Г©Г« ГЇГ® ГўГ°ГҐГ¬ГҐГ­ГЁ ГЁГ§Г¬ГҐГ­ГҐГ­ГЁГї.
+	Searches file by time of change time (not sure how to translate it correctly)
 */
 
 File FileInfo::searchByTimeMode(std::string  mode) {
@@ -77,7 +83,8 @@ File FileInfo::searchByTimeMode(std::string  mode) {
 }
 
 /**
-	Преобразовывает файл в строку.
+	ГЏГ°ГҐГ®ГЎГ°Г Г§Г®ГўГ»ГўГ ГҐГІ ГґГ Г©Г« Гў Г±ГІГ°Г®ГЄГі.
+	Converts a file to a string 
 */
 
 std::string FileInfo::fileToString(File file) {
@@ -85,7 +92,8 @@ std::string FileInfo::fileToString(File file) {
 }
 
 /**
-	Возвращаем все элементы в одной строке
+	Г‚Г®Г§ГўГ°Г Г№Г ГҐГ¬ ГўГ±ГҐ ГЅГ«ГҐГ¬ГҐГ­ГІГ» Гў Г®Г¤Г­Г®Г© Г±ГІГ°Г®ГЄГҐ
+	Returning all elements in one string
 */
 
 std::string FileInfo::allFilesToString() {
@@ -97,7 +105,8 @@ std::string FileInfo::allFilesToString() {
 }
 
 /**
-	Генерирует случайную строку
+	ГѓГҐГ­ГҐГ°ГЁГ°ГіГҐГІ Г±Г«ГіГ·Г Г©Г­ГіГѕ Г±ГІГ°Г®ГЄГі
+	Generates a random string
 */
 
 std::string genString(int size) {
@@ -114,7 +123,8 @@ std::string genString(int size) {
 }
 
 /**
-	Генерирует файлы со случайными параметрами.
+	ГѓГҐГ­ГҐГ°ГЁГ°ГіГҐГІ ГґГ Г©Г«Г» Г±Г® Г±Г«ГіГ·Г Г©Г­Г»Г¬ГЁ ГЇГ Г°Г Г¬ГҐГІГ°Г Г¬ГЁ.
+	Generates files with random parameters
 */
 
 void FileInfo::genRandom(int num)
