@@ -1,7 +1,7 @@
 /**
 	---, main.cpp
-	Назначение: Главный файл (функция main)
-
+	ГЌГ Г§Г­Г Г·ГҐГ­ГЁГҐ: ГѓГ«Г ГўГ­Г»Г© ГґГ Г©Г« (ГґГіГ­ГЄГ¶ГЁГї main)
+	Purpose: Main file (function "main")
 	@author Denis Aksoy
 	@version 1.0 24/11/2018
 */
@@ -14,40 +14,43 @@
 int main() {
 	setlocale(LC_ALL, "RUS");
 
-	std::cout << "СПИСОК 1: ЗАДАНИЕ 1\n\n";
+	std::cout << "Г‘ГЏГ€Г‘ГЋГЉ 1: Г‡ГЂГ„ГЂГЌГ€Г… 1\n\n";
 
 	CyclicList<int> list;
 
-	// Добавление элементов в список
+	// Г„Г®ГЎГ ГўГ«ГҐГ­ГЁГҐ ГЅГ«ГҐГ¬ГҐГ­ГІГ®Гў Гў Г±ГЇГЁГ±Г®ГЄ
+	// Adds elements to list
 	list.addNote(432);
 	list.addNote(754);
 	list.addNote(15);
 	list.addNote(534);
 	list.addNote(6345);
 
-	std::cout << "Все элементы списка: " << list.toString() << std::endl;
-	std::cout << "Поиск элемента под индексом 3: "<< list.searchByIndex(3) << std::endl;
-	std::cout << "Поиск элемента со значением 15: " << list.searchByValue(15)->value << std::endl;
-	std::cout << "Поиск элемента со значением больше 500: " << list.moreThan(500) << std::endl;
+	std::cout << "Г‚Г±ГҐ ГЅГ«ГҐГ¬ГҐГ­ГІГ» Г±ГЇГЁГ±ГЄГ : " << list.toString() << std::endl;
+	std::cout << "ГЏГ®ГЁГ±ГЄ ГЅГ«ГҐГ¬ГҐГ­ГІГ  ГЇГ®Г¤ ГЁГ­Г¤ГҐГЄГ±Г®Г¬ 3: "<< list.searchByIndex(3) << std::endl;
+	std::cout << "ГЏГ®ГЁГ±ГЄ ГЅГ«ГҐГ¬ГҐГ­ГІГ  Г±Г® Г§Г­Г Г·ГҐГ­ГЁГҐГ¬ 15: " << list.searchByValue(15)->value << std::endl;
+	std::cout << "ГЏГ®ГЁГ±ГЄ ГЅГ«ГҐГ¬ГҐГ­ГІГ  Г±Г® Г§Г­Г Г·ГҐГ­ГЁГҐГ¬ ГЎГ®Г«ГјГёГҐ 500: " << list.moreThan(500) << std::endl;
 
-	std::cout << "\nСПИСОК 2: ЗАДАНИЕ 6\n\n";
+	std::cout << "\nГ‘ГЏГ€Г‘ГЋГЉ 2: Г‡ГЂГ„ГЂГЌГ€Г… 6\n\n";
 
 	FileInfo files;
 
-	// Добавление "файлов"
+	// Г„Г®ГЎГ ГўГ«ГҐГ­ГЁГҐ "ГґГ Г©Г«Г®Гў"
+	// Adds "files"
 	files.addFile("Document.doc", 1026, "02/05/2018 09:23:07", "11/23/2018 07:36:39", "FILE");
 	files.addFile("Video.avi", 1432432226, "07/09/2018 03:11:53", "08/27/2018 01:59:39", "FILE");
 	files.addFile("Text.txt", 1026, "06/14/2018 08:59:34", "11/05/2018 09:33:33", "FILE");
 	files.addFile("Tables.exl", 1026, "01/01/2018 11:19:01", "09/01/2018 09:24:06", "FILE");
 	files.addFile("Files", 323902392, "01/01/2018 11:19:01", "09/01/2018 09:24:06", "FOLDER");
-	// Генерирум 2 файла случайно
+	// ГѓГҐГ­ГҐГ°ГЁГ°ГіГ¬ 2 ГґГ Г©Г«Г  Г±Г«ГіГ·Г Г©Г­Г®
+	// Generating 2 files randomly
 	files.genRandom(2);
 
-	std::cout << "Все \"файлы\":\n\n";
+	std::cout << "Г‚Г±ГҐ \"ГґГ Г©Г«Г»\":\n\n";
 	std::cout << files.allFilesToString();
 
-	std::cout << "Поиск файла с именем \"Text.txt\":\n\n" << files.fileToString(files.searchByName("Text.txt"));
-	std::cout << "Поиск папки:\n\n" << files.fileToString(files.searchByType("FOLDER"));
+	std::cout << "ГЏГ®ГЁГ±ГЄ ГґГ Г©Г«Г  Г± ГЁГ¬ГҐГ­ГҐГ¬ \"Text.txt\":\n\n" << files.fileToString(files.searchByName("Text.txt"));
+	std::cout << "ГЏГ®ГЁГ±ГЄ ГЇГ ГЇГЄГЁ:\n\n" << files.fileToString(files.searchByType("FOLDER"));
 
 	std::cin.get();
 	std::cin.get();
