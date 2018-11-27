@@ -1,7 +1,7 @@
 /**
 	---, CyclicalList.cpp
-	Назначение: Реализация цикличного списка
-
+	ГЌГ Г§Г­Г Г·ГҐГ­ГЁГҐ: ГђГҐГ Г«ГЁГ§Г Г¶ГЁГї Г¶ГЁГЄГ«ГЁГ·Г­Г®ГЈГ® Г±ГЇГЁГ±ГЄГ 
+	Purpose: Implementation of cyclical list
 	@author Denis Aksoy
 	@version 1.0 24/11/2018
 */
@@ -9,7 +9,8 @@
 #include "CyclicList.h"
 
 /**
-	Добавляет элемент в список.
+	Г„Г®ГЎГ ГўГ«ГїГҐГІ ГЅГ«ГҐГ¬ГҐГ­ГІ Гў Г±ГЇГЁГ±Г®ГЄ.
+	Adds element in list
 */
 
 template <typename anyType>
@@ -29,7 +30,8 @@ void CyclicList<anyType>::addNote(anyType value)
 }
 
 /**
-	Создает строку из элементов списка если это возможно.
+	Г‘Г®Г§Г¤Г ГҐГІ Г±ГІГ°Г®ГЄГі ГЁГ§ ГЅГ«ГҐГ¬ГҐГ­ГІГ®Гў Г±ГЇГЁГ±ГЄГ  ГҐГ±Г«ГЁ ГЅГІГ® ГўГ®Г§Г¬Г®Г¦Г­Г®.
+	Creates string out of elements of list if possible
 */
 
 template <typename anyType>
@@ -45,7 +47,8 @@ std::string CyclicList<anyType>::toString() {
 }
 
 /**
-	Ищет элемент по значению.
+	Г€Г№ГҐГІ ГЅГ«ГҐГ¬ГҐГ­ГІ ГЇГ® Г§Г­Г Г·ГҐГ­ГЁГѕ.
+	Searches an element by value
 */
 
 template<typename anyType>
@@ -61,14 +64,15 @@ Note<anyType>* CyclicList<anyType>::searchByValue(anyType value)
 }
 
 /**
-	Ищет элемент по индексу.
+	Г€Г№ГҐГІ ГЅГ«ГҐГ¬ГҐГ­ГІ ГЇГ® ГЁГ­Г¤ГҐГЄГ±Гі.
+	Searches element by index
 */
 
 template<typename anyType>
 anyType CyclicList<anyType>::searchByIndex(int index)
 {
 	Note<anyType> *current = head;
-	for (int i = 0; current->next != head; i++) {  // Перебераем все элементы и ищем нужный индекс
+	for (int i = 0; current->next != head; i++) {  // ГЏГҐГ°ГҐГЎГҐГ°Г ГҐГ¬ ГўГ±ГҐ ГЅГ«ГҐГ¬ГҐГ­ГІГ» ГЁ ГЁГ№ГҐГ¬ Г­ГіГ¦Г­Г»Г© ГЁГ­Г¤ГҐГЄГ±/ Iterate through all the elements and looks for the needed index.
 		if (i == index)
 			return current->value;
 		current = current->next;
@@ -77,14 +81,15 @@ anyType CyclicList<anyType>::searchByIndex(int index)
 }
 
 /**
-	Ищет элемент по условию (больше чем).
+	Г€Г№ГҐГІ ГЅГ«ГҐГ¬ГҐГ­ГІ ГЇГ® ГіГ±Г«Г®ГўГЁГѕ (ГЎГ®Г«ГјГёГҐ Г·ГҐГ¬).
+	Seaches element by... (not sure how to translate)
 */
 
 template<typename anyType>
 anyType CyclicList<anyType>::moreThan(anyType value)
 {
 	Note<anyType> *current = head;
-	do {  // Перебераем все элементы и ищем больше чем...
+	do {  // ГЏГҐГ°ГҐГЎГҐГ°Г ГҐГ¬ ГўГ±ГҐ ГЅГ«ГҐГ¬ГҐГ­ГІГ» ГЁ ГЁГ№ГҐГ¬ ГЎГ®Г«ГјГёГҐ Г·ГҐГ¬.../ Going through all the elements and looking for more than...
 		if (current->value > value)
 			return current->value;
 		current = current->next;
