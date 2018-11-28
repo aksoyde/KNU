@@ -1,8 +1,8 @@
 /**
 	---
 	CyclicalList.h
-	Назначение: Объявление класса цикличного списка
-
+	ГЌГ Г§Г­Г Г·ГҐГ­ГЁГҐ: ГЋГЎГєГїГўГ«ГҐГ­ГЁГҐ ГЄГ«Г Г±Г±Г  Г¶ГЁГЄГ«ГЁГ·Г­Г®ГЈГ® Г±ГЇГЁГ±ГЄГ 
+	Purpose: Declaring a cyclical list class
 	@author Denis Aksoy
 	@version 1.0 24/11/2018
 */
@@ -13,14 +13,15 @@
 template <typename anyType>
 
 /**
-	Структура описывающая элемент списка
+	Г‘ГІГ°ГіГЄГІГіГ°Г  Г®ГЇГЁГ±Г»ГўГ ГѕГ№Г Гї ГЅГ«ГҐГ¬ГҐГ­ГІ Г±ГЇГЁГ±ГЄГ 
+	The structure describing the list element
 */
 
 struct Note
 {
-	// Ссылка на слудующий элемент
+	// Г‘Г±Г»Г«ГЄГ  Г­Г  Г±Г«ГіГ¤ГіГѕГ№ГЁГ© ГЅГ«ГҐГ¬ГҐГ­ГІ / Link to the next element
 	Note *next;
-	// Значение элемента
+	// Г‡Г­Г Г·ГҐГ­ГЁГҐ ГЅГ«ГҐГ¬ГҐГ­ГІГ  / Element value
 	anyType value;
 };
 
@@ -28,48 +29,53 @@ template <typename anyType>
 class CyclicList
 {
 private:
-	// Сслыка на "голову" списка
+	// Г‘Г±Г«Г»ГЄГ  Г­Г  "ГЈГ®Г«Г®ГўГі" Г±ГЇГЁГ±ГЄГ  / Link to the "head" of the list
 	Note<anyType> *head = NULL;
 
-	// Сслыка на "хвост" списка
+	// Г‘Г±Г«Г»ГЄГ  Г­Г  "ГµГўГ®Г±ГІ" Г±ГЇГЁГ±ГЄГ  / Link to the "tail" of the list
 	Note<anyType> *tail = NULL;
 public:
 
 	/**
-		Добавить элемент
-		@param value. Значение элемента.
+		Г„Г®ГЎГ ГўГЁГІГј ГЅГ«ГҐГ¬ГҐГ­ГІ
+		Add element
+		@param value. Г‡Г­Г Г·ГҐГ­ГЁГҐ ГЅГ«ГҐГ¬ГҐГ­ГІГ /Element value
 	*/
 
 	void addNote(anyType value);
 
 	/**
-		Преобразовать в строку
-		@param нет.
-		@return result. Строка из элементов списка.
+		ГЏГ°ГҐГ®ГЎГ°Г Г§Г®ГўГ ГІГј Гў Г±ГІГ°Г®ГЄГі
+		Convert to string
+		@param Г­ГҐГІ/no
+		@return result. Г‘ГІГ°Г®ГЄГ  ГЁГ§ ГЅГ«ГҐГ¬ГҐГ­ГІГ®Гў Г±ГЇГЁГ±ГЄГ /String of list items
 	*/
 
 	std::string toString();
 
 	/**
-		Найти по значению
-		@param value. Значение.
-		@return ссылку на элемент списка
+		ГЌГ Г©ГІГЁ ГЇГ® Г§Г­Г Г·ГҐГ­ГЁГѕ
+		Find by value
+		@param value. Г‡Г­Г Г·ГҐГ­ГЁГҐ/Value
+		@return Г±Г±Г»Г«ГЄГі Г­Г  ГЅГ«ГҐГ¬ГҐГ­ГІ Г±ГЇГЁГ±ГЄГ /Link to list item
 	*/
 
 	Note<anyType> *searchByValue(anyType value);
 
 	/**
-		Найти по индексу
-		@param index. Индекс элемента.
-		@return result. Значение элемента.
+		ГЌГ Г©ГІГЁ ГЇГ® ГЁГ­Г¤ГҐГЄГ±Гі
+		Find by index
+		@param index. Г€Г­Г¤ГҐГЄГ± ГЅГ«ГҐГ¬ГҐГ­ГІГ /Element index
+		@return result. Г‡Г­Г Г·ГҐГ­ГЁГҐ ГЅГ«ГҐГ¬ГҐГ­ГІГ /Element value
 	*/
 
 	anyType searchByIndex(int index);
 
 	/**
-		Больше чем
-		@param value. Значение.
-		@return result. Значение элемента.
+		ГЃГ®Г«ГјГёГҐ Г·ГҐГ¬
+		More than
+		@param value. Г‡Г­Г Г·ГҐГ­ГЁГҐ/Value
+		@return result. Г‡Г­Г Г·ГҐГ­ГЁГҐ ГЅГ«ГҐГ¬ГҐГ­ГІГ /Element value
 	*/
 
 	anyType moreThan(anyType value);
