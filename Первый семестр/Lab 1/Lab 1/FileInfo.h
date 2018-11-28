@@ -1,7 +1,7 @@
 /**
 	---, FileInfo.cpp
-	Назначение: Объявления класса хранения информации о файлах
-
+	ГЌГ Г§Г­Г Г·ГҐГ­ГЁГҐ: ГЋГЎГєГїГўГ«ГҐГ­ГЁГї ГЄГ«Г Г±Г±Г  ГµГ°Г Г­ГҐГ­ГЁГї ГЁГ­ГґГ®Г°Г¬Г Г¶ГЁГЁ Г® ГґГ Г©Г«Г Гµ
+	Purpose: File storage class declarations
 	@author Denis Aksoy
 	@version 1.0 24/11/2018
 */
@@ -21,76 +21,85 @@ struct File {
 class FileInfo
 {
 private:
-	// Вектор (хренит информацию о файлах)
+	// Г‚ГҐГЄГІГ®Г° (ГµГ°ГҐГ­ГЁГІ ГЁГ­ГґГ®Г°Г¬Г Г¶ГЁГѕ Г® ГґГ Г©Г«Г Гµ) / Vector (stores information about files)
 	std::vector<File> files;
 public:
 
 	/**
-		Добавить информацию о файле в vector.
-		@param параметры файла.
+		Г„Г®ГЎГ ГўГЁГІГј ГЁГ­ГґГ®Г°Г¬Г Г¶ГЁГѕ Г® ГґГ Г©Г«ГҐ Гў vector.
+		Add file information to vector.
+		@param ГЇГ Г°Г Г¬ГҐГІГ°Г» ГґГ Г©Г«Г /file parameters
 	*/
 
 	void addFile(std::string name, int size, std::string created, std::string mode, std::string type);
 
 	/**
-		Найти файл по имени.
-		@param name. Имя файла.
-		@return file. Объект типа File.
+		ГЌГ Г©ГІГЁ ГґГ Г©Г« ГЇГ® ГЁГ¬ГҐГ­ГЁ
+		Find file by name
+		@param name. Г€Г¬Гї ГґГ Г©Г«Г /Name of the file
+		@return file. ГЋГЎГєГҐГЄГІ ГІГЁГЇГ  File/File object
 	*/
 
 	File searchByName(std::string name);
 
 	/**
-		Найти файл по размеру.
-		@param size. Размер файла.
-		@return file. Объект типа File.
+		ГЌГ Г©ГІГЁ ГґГ Г©Г« ГЇГ® Г°Г Г§Г¬ГҐГ°Гі
+		Find file by size
+		@param size. ГђГ Г§Г¬ГҐГ° ГґГ Г©Г«Г /Size of file
+		@return file. ГЋГЎГєГҐГЄГІ ГІГЁГЇГ  File/File object
 	*/
 
 	File searchBySize(int size);
 
 	/**
-		Найти файл по типу (Файл/Папка).
-		@param type. Тип (Файл/Папка).
-		@return file. Объект типа File.
+		ГЌГ Г©ГІГЁ ГґГ Г©Г« ГЇГ® ГІГЁГЇГі (Г”Г Г©Г«/ГЏГ ГЇГЄГ )
+		Find file by type (File / Folder)
+		@param type. Г’ГЁГЇ (Г”Г Г©Г«/ГЏГ ГЇГЄГ )/Type (File folder)
+		@return file. ГЋГЎГєГҐГЄГІ ГІГЁГЇГ  File/File object
 	*/
 
 	File searchByType(std::string type);
 
 	/**
-		Найти файл по времени создания.
-		@param created. Время создания.
-		@return file. Объект типа File.
+		ГЌГ Г©ГІГЁ ГґГ Г©Г« ГЇГ® ГўГ°ГҐГ¬ГҐГ­ГЁ Г±Г®Г§Г¤Г Г­ГЁГї.
+		Find file by creation time
+		@param created. Г‚Г°ГҐГ¬Гї Г±Г®Г§Г¤Г Г­ГЁГї/Time of creaction
+		@return file. ГЋГЎГєГҐГЄГІ ГІГЁГЇГ  File/File object
 	*/
 
 	File searchByTimeCreated(std::string created);
 
 	/**
-		Найти файл по времени изменения.
-		@param mode. Время изменения.
-		@return file. Объект типа File.
+		ГЌГ Г©ГІГЁ ГґГ Г©Г« ГЇГ® ГўГ°ГҐГ¬ГҐГ­ГЁ ГЁГ§Г¬ГҐГ­ГҐГ­ГЁГї
+		Find file by change time
+		@param mode. Г‚Г°ГҐГ¬Гї ГЁГ§Г¬ГҐГ­ГҐГ­ГЁГї/Change time
+		@return file. ГЋГЎГєГҐГЄГІ ГІГЁГЇГ  File/File object
 	*/
 
 	File searchByTimeMode(std::string mode);
 
 	/**
-		Преобразовать файл в строку.
-		@param file. Объект типа File.
-		@return result. Строка содержащая все переменный объекта.
+		ГЏГ°ГҐГ®ГЎГ°Г Г§Г®ГўГ ГІГј ГґГ Г©Г« Гў Г±ГІГ°Г®ГЄГі
+		Convert file to string
+		@param file. ГЋГЎГєГҐГЄГІ ГІГЁГЇГ  File/File object
+		@return result. Г‘ГІГ°Г®ГЄГ  Г±Г®Г¤ГҐГ°Г¦Г Г№Г Гї ГўГ±ГҐ ГЇГҐГ°ГҐГ¬ГҐГ­Г­Г»Г© Г®ГЎГєГҐГЄГІГ /A string containing all object variables
 	*/
 
 	std::string fileToString(File file);
 
 	/**
-		Преобразовать все файлы в строку
-		@param нет
-		@return result. Значение элемента.
+		ГЏГ°ГҐГ®ГЎГ°Г Г§Г®ГўГ ГІГј ГўГ±ГҐ ГґГ Г©Г«Г» Гў Г±ГІГ°Г®ГЄГі
+		Convert all files to string
+		@param Г­ГҐГІ/no
+		@return result. Г‡Г­Г Г·ГҐГ­ГЁГҐ ГЅГ«ГҐГ¬ГҐГ­ГІГ /Element value
 	*/
 
 	std::string allFilesToString();
 
 	/**
-		Сгенерировать случайный
-		@param num. Количество создаваемых элементов.
+		Г‘ГЈГҐГ­ГҐГ°ГЁГ°Г®ГўГ ГІГј Г±Г«ГіГ·Г Г©Г­Г»Г©
+		Generate random
+		@param num. ГЉГ®Г«ГЁГ·ГҐГ±ГІГўГ® Г±Г®Г§Г¤Г ГўГ ГҐГ¬Г»Гµ ГЅГ«ГҐГ¬ГҐГ­ГІГ®Гў/Amount of created elements
 	*/
 
 	void genRandom(int num = 1);
