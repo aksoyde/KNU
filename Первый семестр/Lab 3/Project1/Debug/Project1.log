@@ -1,0 +1,5 @@
+﻿  Main.cpp
+LINK : warning LNK4098: библиотека по умолчанию "MSVCRT" противоречит использованию других библиотек; используйте параметр /NODEFAULTLIB:library
+LINK : warning LNK4098: библиотека по умолчанию "LIBCMT" противоречит использованию других библиотек; используйте параметр /NODEFAULTLIB:library
+glew32s.lib(glew.obj) : warning LNK4099: "vc120.pdb" PDB не найден с "glew32s.lib(glew.obj)" или на "C:\Users\jatso\Desktop\Материалы\Прога (универ)\Первый семестр\Lab 3\Debug\vc120.pdb"; компоновка объекта выполняется как при отсутствии отладочных данных
+  Project1.vcxproj -> C:\Users\jatso\Desktop\Материалы\Прога (универ)\Первый семестр\Lab 3\Debug\Project1.exe
