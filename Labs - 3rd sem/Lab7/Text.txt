@@ -1,0 +1,6 @@
+5 8
+a b c d e a p a
+a a a a a a a a
+a c a c c c c m
+e n k t r e f w
+s n t o b h t e
