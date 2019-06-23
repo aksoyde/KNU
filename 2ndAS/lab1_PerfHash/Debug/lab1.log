@@ -1,0 +1,13 @@
+﻿  main.cpp
+C:\Users\Pelman\Desktop\lab2nd\2nd_term\lab1_Hash\lab1\main.cpp(116,54): error C2664:  "std::basic_istream<char,std::char_traits<char>> &std::basic_istream<char,std::char_traits<char>>::getline(_Elem *,std::streamsize,_Elem)": невозможно преобразовать аргумент 1 из "std::ifstream" в "_Elem *"
+C:\Users\Pelman\Desktop\lab2nd\2nd_term\lab1_Hash\lab1\main.cpp(116,54): error C2664:         with
+C:\Users\Pelman\Desktop\lab2nd\2nd_term\lab1_Hash\lab1\main.cpp(116,54): error C2664:         [
+C:\Users\Pelman\Desktop\lab2nd\2nd_term\lab1_Hash\lab1\main.cpp(116,54): error C2664:             _Elem=char
+C:\Users\Pelman\Desktop\lab2nd\2nd_term\lab1_Hash\lab1\main.cpp(116,54): error C2664:         ]
+C:\Users\Pelman\Desktop\lab2nd\2nd_term\lab1_Hash\lab1\main.cpp(116,17): message :  Для выполнения данного преобразования нет доступного оператора преобразования, определенного пользователем, или вызов оператора невозможен
+C:\Users\Pelman\Desktop\lab2nd\2nd_term\lab1_Hash\lab1\main.cpp(136,20): warning C4018:  <: несоответствие типов со знаком и без знака
+C:\Users\Pelman\Desktop\lab2nd\2nd_term\lab1_Hash\lab1\main.cpp(144,20): warning C4018:  <: несоответствие типов со знаком и без знака
+C:\Users\Pelman\Desktop\lab2nd\2nd_term\lab1_Hash\lab1\main.cpp(145,21): warning C4018:  <: несоответствие типов со знаком и без знака
+C:\Users\Pelman\Desktop\lab2nd\2nd_term\lab1_Hash\lab1\main.cpp(153,20): warning C4018:  <: несоответствие типов со знаком и без знака
+C:\Users\Pelman\Desktop\lab2nd\2nd_term\lab1_Hash\lab1\main.cpp(154,21): warning C4018:  <: несоответствие типов со знаком и без знака
+C:\Users\Pelman\Desktop\lab2nd\2nd_term\lab1_Hash\lab1\main.cpp(187,25): warning C4018:  <: несоответствие типов со знаком и без знака

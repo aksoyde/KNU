@@ -1,0 +1,92 @@
+3
+FRUITS 34
+apple
+apricot
+avocado
+banana
+blackberry
+blackcurrant
+blueberry
+boysenberry
+cherry
+coconut
+fig
+grape
+grapefruit
+kiwifruit
+lemon
+lime
+lychee
+mandarin
+mango
+melon
+nectarine
+orange
+papaya
+passion fruit
+peach
+pear
+pineapple
+plum
+pomegranate
+quince
+raspberry
+strawberry
+watermelon
+VEGETABLES 33
+artichoke [C]
+asparagus [U]
+aubergine [C] and [U] - (called eggplant in United States)
+beet [C] - (called beetroot in British English)
+beetroot [C] and [U] - (called beet in United States)
+bell pepper * [C] - (Just called pepper in British English or with its color beforehand just as red pepper or green pepper. In Australia and New Zealand it is known as capsicum)
+broccoli [U] - (broccoli is an uncountable noun so there is no plural of broccoli)
+Brussels sprout [C]
+cabbage [C] and [U]
+carrot [C]
+cauliflower [C] and [U]
+celery [U]
+corn ** [U]
+courgette * [C] - (called zucchini in United States)
+cucumber * [C] and [U]
+eggplant * [C] and [U] - (called aubergine in British English)
+green bean * [C] - (sometimes called French bean in the UK)
+green onion [C] - (called spring onion in the British English)
+leek [C]
+lettuce [C] and [U]
+mushroom *** [C]
+onion [C] and [U]
+pea [C]
+pepper [C] - (called bell pepper in British English. In Australia and New Zealand it is known as capsicum)
+potato [C] and [U] - (the plural of potato is potatoes - potato is sometimes uncountable as in mashed potato)
+pumpkin * [C] and [U]
+radish [C] - (the plural of radish is radishes)
+spring onion [C] - (called green onion or scallion in United States)
+squash * [C] and [U]
+sweet potato [C] - (kumara in New Zealand)
+tomato * [C] - (the plural of tomato is tomatoes)
+zucchini * [C] - (called courgette in British English)
+DRINKS 23
+beer
+brandy
+cocoa
+cocktail
+coffee
+coke
+green tea
+ice coffee
+ice tea
+juice
+lemonade
+liquor
+milk
+milkshake
+orange juice
+punch
+soda
+soft drink
+tea
+tomato juice
+water
+whiskey
+wine

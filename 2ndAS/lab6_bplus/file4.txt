@@ -1,0 +1,25 @@
+digraph g {
+	splines=false;
+	node [shape=record]
+	node0 [label = "{{<k0> 5.13 | <k1> 7.3} | {<l0> * | <l1> * | <l2> *}}"]
+	node0:<l0> -> node1
+	node0:<l1> -> node2
+	node0:<l2> -> node3
+	node1 [label = "{{<k0> 0.98 | <k1> 3.28} | {<l0> * | <l1> * | <l2> *}}"]
+	node1:<l0> -> node5
+	node1:<l1> -> node6
+	node1:<l2> -> node7
+	node2 [label = "{{<k0> 7.1} | {<l0> * | <l1> *}}"]
+	node2:<l0> -> node9
+	node2:<l1> -> node10
+	node3 [label = "{{<k0> 8.79} | {<l0> * | <l1> *}}"]
+	node3:<l0> -> node13
+	node3:<l1> -> node14
+	node5 [label = "{<k0> 0.43 | <v0> grapefruit} | {<k1> 0.74 | <v1> apricot} | {<k2> 0.98 | <v2> quince}"]
+	node6 [label = "{<k0> 2.68 | <v0> watermelon} | {<k1> 3.28 | <v1> lime}"]
+	node7 [label = "{<k0> 4.93 | <v0> grape} | {<k1> 5.04 | <v1> lemon} | {<k2> 5.13 | <v2> strawberry}"]
+	node9 [label = "{<k0> 5.15 | <v0> ss} | {<k1> 6.59 | <v1> avocado} | {<k2> 7.1 | <v2> cherry}"]
+	node10 [label = "{<k0> 7.15 | <v0> kk} | {<k1> 7.3 | <v1> lychee}"]
+	node13 [label = "{<k0> 8.79 | <v0> blueberry}"]
+	node14 [label = "{<k0> 9.31 | <v0> banana} | {<k1> 9.34 | <v1> peach}"]
+}
